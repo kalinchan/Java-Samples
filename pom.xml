@@ -6,6 +6,11 @@
 	<groupId>io.github.kalinchan</groupId>
 	<artifactId>java-samples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<packaging>pom</packaging>
 	<modules>
 		<module>lambda</module>
