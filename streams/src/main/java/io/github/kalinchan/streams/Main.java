@@ -127,7 +127,7 @@ public class Main {
 		System.out.println("Total = " + total);
 		System.out.println();
 		
-		//Reducation - summary statistics 
+		//Reduction - summary statistics 
 		IntSummaryStatistics summary = IntStream.of(7,2,19,88,73,4,10)
 				.summaryStatistics(); //gets count, sum, min, average and max of the stream
 		//only works for int stream
