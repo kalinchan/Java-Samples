@@ -15,5 +15,7 @@
 	<modules>
 		<module>lambda</module>
 		<module>streams</module>
+		<module>threads</module>
+		<module>synchronized</module>
 	</modules>
 </project>
