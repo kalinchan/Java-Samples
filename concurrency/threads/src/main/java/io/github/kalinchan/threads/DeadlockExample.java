@@ -41,7 +41,7 @@ public class DeadlockExample {
 		}).start();
 	}
 }
-//When Deadlock runs, it's extremely likely that both threads will block when they attempt to invoke bowBack. 
+//When Deadlock Example runs, it's extremely likely that both threads will block when they attempt to invoke bowBack. 
 //Neither block will ever end, because each thread is waiting for the other to exit bow.
 
 //Starvation describes a situation where a thread is unable to gain regular access to shared resources and is 

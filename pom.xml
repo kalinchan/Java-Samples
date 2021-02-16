@@ -17,5 +17,7 @@
 		<module>streams</module>
 		<module>threads</module>
 		<module>synchronized</module>
+		<module>semaphores</module>
+		<module>countdownlatch</module>
 	</modules>
 </project>
