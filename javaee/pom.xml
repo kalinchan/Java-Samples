@@ -16,7 +16,7 @@
 
 
 	<modules>
-
+		<module>cdi-scopes</module>
 	</modules>
 
 	<dependencies>
