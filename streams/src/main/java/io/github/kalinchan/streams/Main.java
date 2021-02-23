@@ -123,7 +123,7 @@ public class Main {
 		//Reduction - sum
 		double total = Stream.of(7.3, 1.5, 4.8)
 				.reduce(0.0, (Double a, Double b) -> a+b); ///0.0 is starting value, pass in two doubles and add together.
-		// double is a the current total and double b is new value which is being passed in 
+		// double a is the current total and double b is new value which is being passed in 
 		System.out.println("Total = " + total);
 		System.out.println();
 		

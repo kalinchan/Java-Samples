@@ -17,6 +17,7 @@
 
 	<modules>
 		<module>cdi-scopes</module>
+		<module>cdi-qualifier</module>
 	</modules>
 
 	<dependencies>
@@ -24,6 +25,12 @@
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>8.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>fish.payara.api</groupId>
+			<artifactId>payara-api</artifactId>
+			<version>5.2021.1</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
