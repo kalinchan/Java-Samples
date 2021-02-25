@@ -18,6 +18,7 @@
 	<modules>
 		<module>cdi-scopes</module>
 		<module>cdi-qualifier</module>
+		<module>servlet-jsp</module>
 	</modules>
 
 	<dependencies>
