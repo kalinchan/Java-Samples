@@ -18,7 +18,7 @@ public class resultServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		if (req.getParameter("name") == null) {
+		if (req.getParameter("name") == null || req.getParameter("name").isEmpty()) {
 			resp.getOutputStream().println("No name has been inputted!");
 			return;
 		}
