@@ -19,6 +19,8 @@
 		<module>cdi-scopes</module>
 		<module>cdi-qualifier</module>
 		<module>servlet-jsp</module>
+		<module>jsp-tutorial</module>
+		<module>cdi-stereotypes</module>
 	</modules>
 
 	<dependencies>

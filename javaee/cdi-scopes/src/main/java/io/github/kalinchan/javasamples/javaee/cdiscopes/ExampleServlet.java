@@ -58,7 +58,7 @@ public class ExampleServlet extends HttpServlet {
 	 * long-running conversations. All long-running conversations are scoped to a
 	 * particular HTTP servlet session and may not cross session boundaries.
 	 * 
-	 * @SessionScoped and @ConversationScoped are both passivating Passivation is
+	 * @SessionScoped and @ConversationScoped are both passivating. Passivation is
 	 * the act of moving an idle object that is held in memory auxiliary storage.
 	 */
 

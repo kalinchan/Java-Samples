@@ -9,7 +9,8 @@
 <body>
 	<form action="resultServlet">
 		<label for="name">Name</label>
-		<input type="text" name="name" id="name"> <input type="submit"value="submit">
+		<input type="text" name="name" id="name"> 
+		<input type="submit"value="submit">
 	</form>
 </body>
 </html>
