@@ -21,6 +21,7 @@
 		<module>servlet-jsp</module>
 		<module>jsp-tutorial</module>
 		<module>cdi-stereotypes</module>
+		<module>servlets</module>
 	</modules>
 
 	<dependencies>

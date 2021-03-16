@@ -28,8 +28,6 @@
 					<version>3.2.3</version>
 					<configuration>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
-						<warSourceDirectory>${basedir}/WebContent</warSourceDirectory>
-						
 					</configuration>
 				</plugin>
 			</plugins>
