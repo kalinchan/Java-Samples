@@ -22,6 +22,8 @@
 		<module>jsp-tutorial</module>
 		<module>cdi-stereotypes</module>
 		<module>servlets</module>
+		<module>cdi-events</module>
+		<module>cdi-decorators-interceptors</module>
 	</modules>
 
 	<dependencies>

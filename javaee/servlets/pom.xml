@@ -17,6 +17,7 @@
 
 	<modules>
 		<module>filters</module>
+		<module>listeners</module>
 	</modules>
 
 </project>
