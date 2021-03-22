@@ -18,6 +18,7 @@
 	<modules>
 		<module>filters</module>
 		<module>listeners</module>
+		<module>session</module>
 	</modules>
 
 </project>
