@@ -24,6 +24,9 @@
 		<module>servlets</module>
 		<module>cdi-events</module>
 		<module>cdi-decorators-interceptors</module>
+		<module>payarasql</module>
+		<module>payarapostsql</module>
+		<module>ejb</module>
 	</modules>
 
 	<dependencies>
