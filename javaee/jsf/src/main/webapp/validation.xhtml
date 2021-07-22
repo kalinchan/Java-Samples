@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<!-- 
+	validateBean - Registers a bean validator for the component.
+	validateWholeBean - Allows cross-field validation by enabling class-level bean validation on CDI-based backing beans.
+	validateDoubleRange -Checks whether the local value of a component is within a certain range. The value must be floating-point or convertible to floating-point.
+	validateLength - Checks whether the length of a component’s local value is within a certain range. The value must be a java.lang.String.
+	validateLongRange - Checks whether the local value of a component is within a certain range. The value must be any numeric type or String that can be converted to a long.
+	validateRegex - Checks whether the local value of a component is a match against a regular expression from the java.util.regex package.
+	validateRequired - Ensures that the local value is not empty on an EditableValueHolder component.
+ -->
+ 
+ <h:body>
+ 	<h:form>
+ 		<h2>Input Age</h2> <br/>
+ 		<h:inputText id="age" size="4" value="#{validationUser.age}">
+ 			<f:validateLongRange minimum="1"/>
+ 		</h:inputText>
+ 		<h:commandButton id="submit" value="submit"/>
+ 		<h:message showSummary="true" showDetail="false"
+           style="color: #d20005;
+           font-family: 'New Century Schoolbook', serif;
+           font-style: oblique;
+           text-decoration: overline"
+           id="errors1"
+           for="age"/>
+ 	</h:form>
+ </h:body>
+</html>

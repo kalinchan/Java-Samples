@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+	<h:body>
+		<h2>Ajax</h2>
+		<h:message id="message"/>
+		<h:form>
+			<h:inputText id="name" value="#{userData.name}"></h:inputText>
+			<h:commandButton value="Show Message">
+				<f:ajax execute="name" render="outputMessage"/>
+			</h:commandButton>
+			<h2>
+				<h:outputText id="outputMessage" value="#{userData.welcomeMessage != null ? userData.welcomeMessage : ''}"/>
+			</h2>
+		</h:form>
+	</h:body>
+</html>

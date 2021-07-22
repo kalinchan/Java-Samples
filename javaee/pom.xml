@@ -27,6 +27,7 @@
 		<module>payarasql</module>
 		<module>payarapostsql</module>
 		<module>ejb</module>
+		<module>jsf</module>
 	</modules>
 
 	<dependencies>
