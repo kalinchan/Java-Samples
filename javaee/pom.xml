@@ -16,6 +16,7 @@
 
 
 	<modules>
+		<module>arquillian</module>
 		<module>cdi-scopes</module>
 		<module>cdi-qualifier</module>
 		<module>servlet-jsp</module>
@@ -28,7 +29,12 @@
 		<module>payarapostsql</module>
 		<module>ejb</module>
 		<module>jsf</module>
-	</modules>
+		<module>json-p</module>
+        <module>json-b</module>
+        <module>beanvalidation</module>
+        <module>jms-topic</module>
+		<module>jms-queue</module>
+    </modules>
 
 	<dependencies>
 		<dependency>

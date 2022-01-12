@@ -11,6 +11,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+/*
+This annotation tells JUnit to use Arquillian as the test controller.
+Arquillian then looks for a public static method annotated with @Deployment
+to retrieve the test archive
+ */
 @RunWith(Arquillian.class)
 public class GreeterTest {
 

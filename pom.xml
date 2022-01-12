@@ -17,7 +17,7 @@
 		<module>streams</module>
 		<module>concurrency</module>
 		<module>javaee</module>
-	</modules>
+    </modules>
 
 	<build>
 		<pluginManagement>
