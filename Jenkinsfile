@@ -28,6 +28,7 @@ pipeline {
                 JAVA_HOME = tool("${jdkVer}")
             }
             steps {
+                sh """mvn -version"""
                 sh """mvn -B -V -ff clean install"""
             }
             post {
