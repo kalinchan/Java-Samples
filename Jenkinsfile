@@ -8,13 +8,13 @@ pipeline {
             steps {
                 script{
                     repositoryUrl = 'https://github.com/kalinchan/Java-Samples'
-                    revision = checkout changelog: false, poll: false,
-                            scm: [$class: 'GitSCM',
+                    revision = checkout([$class: 'GitSCM',
                                   branches: [[name: "master"]],
                                   doGenerateSubmoduleConfigurations: false,
                                   extensions: [[$class: 'CleanCheckout']],
                                   submoduleCfg: [],
-                                  userRemoteConfigs: repositoryUrl]
+                                  userRemoteConfigs: [[url: repositoryUrl]]
+                    ])
                 }
                 echo "Checked out ${repositoryUrl}"
             }
