@@ -28,7 +28,7 @@ pipeline {
                 JAVA_HOME = tool("${jdkVer}")
             }
             steps {
-                withMaven(maven: "maven") {
+                withMaven(jdk: "zulu-8", maven: "maven") {
                     sh """mvn -version"""
                     sh """mvn -B -V -ff clean install"""
                 }
