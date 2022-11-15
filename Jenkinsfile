@@ -2,7 +2,7 @@
 def repositoryUrl
 def jdkVer = 'zulu-8'
 pipeline {
-    agent none
+    agent any
     stages {
         stage('Checkout') {
             steps {
