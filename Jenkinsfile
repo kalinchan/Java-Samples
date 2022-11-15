@@ -27,8 +27,6 @@ pipeline {
                 JAVA_HOME = tool("${jdkVer}")
             }
             steps {
-                env.JAVA_HOME="${tool 'zulu-8'}"
-                env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
                 withMaven(jdk: 'zulu-8', maven: 'maven') {
                     sh """mvn -version"""
                     sh """mvn -B -V -ff clean install"""
