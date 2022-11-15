@@ -1,5 +1,6 @@
 #!groovy
 def repositoryUrl
+def jdkVer = 'zulu-8'
 pipeline {
     agent any
     stages {
