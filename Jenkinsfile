@@ -28,7 +28,7 @@ pipeline {
                 JAVA_HOME = tool("${jdkVer}")
             }
             steps {
-                sh """. ./etc/profile.d/maven.sh"""
+                sh """. /etc/profile.d/./maven.sh"""
                 sh """mvn -version"""
                 sh """mvn -B -V -ff clean install"""
             }
