@@ -28,8 +28,10 @@ pipeline {
                 JAVA_HOME = tool("${jdkVer}")
             }
             steps {
-                sh """mvn -version"""
-                sh """mvn -B -V -ff clean install"""
+                withMaven(maven: "maven") {
+                    sh """mvn -version"""
+                    sh """mvn -B -V -ff clean install"""
+                }
             }
             post {
                 success {
