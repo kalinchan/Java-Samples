@@ -12,7 +12,9 @@ node {
   stage('SonarQube Analysis') {
     withMaven(jdk: 'zulu-11', publisherStrategy: 'EXPLICIT') {
       withSonarQubeEnv() {
-        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=kchan"
+        withCredentials([string(credentialsId: 'kchan-sonar', variable: 'login')]) {
+          sh "mvn clean verify sonar:sonar -Dsonar.projectKey=kchan -Dsonar.login=${login}"
+        }
       }
     }
   }
